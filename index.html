@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>EJ-Forecast</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>☀</p>
+                <p>EJ-Forecast</p>
+            </div>
+            <div class="navContainer">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_self">Home</a>
+                        </li>  
+                        <li>
+                            <a href="info.html">Weather Info</a>
+                        </li>
+                        <li>
+                            <a href="hotline.html">Hotline</a>
+                        </li>                    
+                    </ul>
+                </nav>
+            </div>
+        </header> 
+        <main>
+            <section class="cityInputSection">
+                <h1>Be updated with the weather</h1>
+                <form class="cityForm">
+                    <div>
+                        <input type="text" class="cityName" placeholder=" Enter your city">
+                    </div>
+                    <div>
+                        <button type="submit" class="cityBtn">Enter</button>
+                    </div>
+                </form>
+                <div class="result1"></div>
+            </section>
+            <section class="weatherInputSection">
+                <h1>Don't know what to do? Let us help you</h1>
+                <form class="weatherForm" action="back.php" method="post">
+                    <div>
+                        <input type="text" class="weatherCondition" placeholder=" Enter weather condition">
+                    </div>
+                    <div>
+                        <input type="submit" id="subweather" name="subweather">
+                    </div>
+                </form>
+                <div class="result2"></div>
+            </section>
+        </main>
+        <script src="function.js"></script>
+    </body>
+</html>
